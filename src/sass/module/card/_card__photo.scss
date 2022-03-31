@@ -1,0 +1,37 @@
+@use "global" as *;
+.card__photo {
+  display: inline-block;
+  width: 100%;
+  height: rem(261);
+  background-color: #f00;
+  // 擬似要素`.card__photo::beforeの親`
+  position: relative;
+  @include mq(md) {
+    max-width: rem(550);
+    width: 100%;
+    height: rem(367);
+  }
+  @include mq(xl) {
+  }
+}
+
+// 擬似要素(画像表示)
+.card__photo::before {
+  display: inline-block;
+  content: "";
+  width: 95%;
+  height: 95%;
+  background-image: url(/images/Rectangle@2x.png);
+  background-size: cover;
+  // 擬似要素`.card__photoの子`
+  // 中央合わせ
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  @include mq(md) {
+  }
+  @include mq(xl) {
+  }
+}

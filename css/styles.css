@@ -1,0 +1,257 @@
+@charset "UTF-8";
+body {
+  font-family: "";
+}
+
+.u-desktop {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .u-desktop {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .u-mobile {
+    display: none;
+  }
+}
+
+/* リキッドレイアウト対応 */
+html {
+  font-size: 16px;
+}
+@media (max-width: 375px) {
+  html {
+    font-size: 4.2666666667vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 1.4545454545vw;
+  }
+}
+@media (min-width: 1100px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+/* pcの電話番号発信対応 */
+@media screen and (min-width: 768px) {
+  a[href^="tel:"] {
+    pointer-events: none;
+  }
+}
+
+/* ホバー */
+a {
+  text-decoration: none;
+  color: inherit;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+@media screen and (min-width: 768px) {
+  a:hover {
+    opacity: 0.8;
+  }
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul,
+ol {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core root defaults */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul,
+ol {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+  width: 100%;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Blur images when they have no alt attribute */
+img:not([alt]) {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur stdDeviation="10" /></filter></svg>#filter');
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+}
+
+/* フォームリセット */
+input,
+button,
+select,
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  font: inherit;
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type=checkbox],
+input[type=radio] {
+  display: none;
+}
+
+input[type=submit],
+input[type=button],
+label,
+button,
+select {
+  cursor: pointer;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.wrap {
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .card__contents--inner {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0%, -50%);
+            transform: translate(0%, -50%);
+    padding-left: 51%;
+  }
+}
+.card__contents {
+  display: inline-block;
+  width: 100%;
+  height: 265px;
+  height: 16.5625rem;
+}
+@media screen and (min-width: 768px) {
+  .card__contents {
+    max-width: 33.75rem;
+    width: 100%;
+    height: 100%;
+  }
+}
+.card__inner {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (min-width: 768px) {
+  .card__inner {
+    text-align: left;
+    position: relative;
+  }
+}
+.card__photo {
+  display: inline-block;
+  width: 100%;
+  height: 261px;
+  height: 16.3125rem;
+  background-color: #f00;
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .card__photo {
+    max-width: 34.375rem;
+    width: 100%;
+    height: 22.9375rem;
+  }
+}
+.card__photo::before {
+  display: inline-block;
+  content: "";
+  width: 95%;
+  height: 95%;
+  background-image: url(/images/Rectangle@2x.png);
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.card {
+  display: inline-block;
+  max-width: 374px;
+  max-width: 23.375rem;
+  width: 100%;
+  height: 526px;
+  height: 32.875rem;
+  background-color: #000;
+  color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .card {
+    max-width: 68.125rem;
+    width: 100%;
+    height: 22.9375rem;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

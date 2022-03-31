@@ -1,0 +1,11 @@
+@use "global" as *;
+.card__contents--inner {
+  @include mq(md) {
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+    padding-left: 51%;
+  }
+  @include mq(xl) {
+  }
+}

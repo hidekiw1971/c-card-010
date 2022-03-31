@@ -4,8 +4,16 @@
 
 ## 概要
 
-- ｘｘｘ
+- カード（画像（擬似要素）、タイトル、説明）
 - https://www.notion.so/000_web-component-index-c4b399010bf342e9b4e2ed516cf9c730
+-
+- 画像とコンテンツをセパレートしたパターン（これにするとコンテンツの文字が画像の邪魔をしない。）
+- `<div class="card">`
+- `<div class="card__inner">`
+-     `<div class="card__photo"></div>`
+-     `<div class="card__contents"></div>`
+- `</div>`
+- `</div>`
 
 ## 仕様
 
@@ -21,7 +29,7 @@
 ## 使い方
 
 - 「copy start」から「copy end」をコピペ。
-- css: src -> module -> xxx をコピペ。
+- css: src -> module -> card をコピペ。
 
 ## w3c html チェック結果
 
@@ -33,8 +41,7 @@
 
 ## portfolio url:
 
-- https://c-0000.wtb.cfbx.jp/
-- https://css-md-0000.wtb.cfbx.jp/
+- https://c-0042.wtb.cfbx.jp/
 
 ## 参考にしたサイト
 
@@ -42,7 +49,7 @@
 
 ## 更新履歴
 
-- 2022/mm/dd 初版 作成完了
+- 2022/3/31 初版 作成完了(カード（画像（擬似要素）、タイトル、説明）)
 
 ## 環境・使い方
 
